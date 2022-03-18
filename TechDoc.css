@@ -1,0 +1,18 @@
+.flexbox-example1 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background: purple;
+}
+
+.flex-ex1-item {
+    display: inherit;
+    height: 50px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    margin: 10px 10px;
+    flex: 1 1 auto;
+}
