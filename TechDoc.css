@@ -6,11 +6,13 @@ body {
 h1 {
     font-size: 32px;
     margin: 5px;
+    text-align: center;
+    text-decoration: underline;
 }
 
 h2 {
     font-size: 26px;
-    margin: 5;
+    margin: 5px;
 }
 
 h3 {
@@ -36,10 +38,11 @@ h3 {
         width: 100%;
         height: 200px;
         flex-direction: row;
-        border-bottom: 2px solid purple;
+        border: 2px solid purple;
         flex-wrap: none;
         flex: 1;
         overflow: auto;
+        justify-content: center;
     }
 
     #main-doc {
@@ -48,16 +51,16 @@ h3 {
         margin-left: 0px;
     }
 
-    ul {
+    nav > ul {
+        position: absolute;
         display: block;
         min-height: min-content;
+        margin-top: 45px;
     }
 
-    li {
-        display: block;
-        min-height: min-content;
+    .navheader {
+        align-self: center;
     }
-
 }
 
 .flexbox-example1 {
