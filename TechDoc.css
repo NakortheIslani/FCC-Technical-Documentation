@@ -1,18 +1,19 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Inter', sans-serif;
 }
 
 h1 {
     font-size: 32px;
-    margin: 5px;
+    margin: 0 0;
     text-align: center;
     text-decoration: underline;
 }
 
 h2 {
     font-size: 26px;
-    margin: 5px;
+    margin: 0 0;
 }
 
 h3 {
@@ -20,15 +21,29 @@ h3 {
 }
 
 #navbar {
-    background-color: steelblue;
     position: fixed;
     width: 250px;
     height: 100%;
-    border-right: 2px solid purple;
+    border-right: 5px solid black;
+    line-height: 30px;
+    padding-top: 10px;
 }
 #main-doc {
     position: relative;
     margin-left: 250px;
+    padding: 10px 15px 0 20px;
+}
+
+.nav-link {
+    font-size: 18px;
+    text-decoration: none;
+    color: black
+}
+
+.sub-link {
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
 }
 
 @media only screen and (max-width: 820px) {
@@ -38,7 +53,7 @@ h3 {
         width: 100%;
         height: 200px;
         flex-direction: row;
-        border: 2px solid purple;
+        border-bottom: 5px solid black;
         flex-wrap: none;
         flex: 1;
         overflow: auto;
