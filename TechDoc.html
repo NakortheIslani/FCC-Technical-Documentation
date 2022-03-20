@@ -348,6 +348,170 @@
                             </div>
                         </article>
                 </section>
+                <section class="main-section" id="align_items">
+                    <header><h2>The align-items property</h2></header>
+                        <article>
+                            <p>The align-items property is used to align the flex items vertically in the container.
+                                In these examples we use a 250 pixels high container, to better demonstrate 
+                                the align-items property.
+                            </p>
+                            <div class="flexbox-example6">
+                                <div class="flex-ex6-item">A</div>
+                                <div class="flex-ex6-item">B</div>
+                                <div class="flex-ex6-item">C</div>
+                            </div>
+                            <div class="code-examples">
+                                <h3>Example code</h3>
+                                <p>The center value aligns the flex items in the middle of the container.</p>
+                                <code class="code">
+                                    .flex-container {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;display: flex;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;height: 250px;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;align-items: center;<br>
+                                    }
+                                </code>
+                            </div>
+                            <div class="code-examples">
+                                <h3>Example code</h3>
+                                <p>The flex-start value aligns the flex items at the top of the container.</p>
+                                <code class="code">
+                                    .flex-container {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;display: flex;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;height: 250px;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;align-items: flex-start;<br>
+                                    }
+                                </code>
+                            </div>
+                            <div class="code-examples">
+                                <h3>Example code</h3>
+                                <p>The flex-end value aligns the flex items at the bottom of the container.</p>
+                                <code class="code">
+                                    .flex-container {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;display: flex;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;height: 250px;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;align-items: flex-end;<br>
+                                    }
+                                </code>
+                            </div>
+                            <div class="code-examples">
+                                <h3>Example code</h3>
+                                <p>The stretch value stretches the flex items to fill the container (this is default).</p>
+                                <code class="code">
+                                    .flex-container {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;display: flex;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;height: 250px;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;align-items: stretch;<br>
+                                    }
+                                </code>
+                            </div>
+                            <div class="code-examples">
+                                <h3>Example code</h3>
+                                <p>The baseline value aligns the flex items such as their text baselines aligns.</p>
+                                <code class="code">
+                                    .flex-container {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;display: flex;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;height: 250px;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;align-items: baseline;<br>
+                                    }
+                                </code>
+                            </div>
+                        </article>
+                </section>
+                <section class="main-section" id="align_content">
+                    <header><h2>The align-content property</h2></header>
+                        <article>
+                            <p>The align-content property is used to align the flex lines.
+                                In these examples we use a 210 pixels high container, with the flex-wrap property 
+                                set to wrap, to better demonstrate the align-content property.
+                            </p>
+                            <div class="flexbox-example7">
+                                <div class="flex-ex7-item">A</div>
+                                <div class="flex-ex7-item">B</div>
+                                <div class="flex-ex7-item">C</div>
+                                <div class="flex-ex7-item">D</div>
+                                <div class="flex-ex7-item">E</div>
+                                <div class="flex-ex7-item">F</div>
+                                <div class="flex-ex7-item">G</div>
+                                <div class="flex-ex7-item">H</div>
+                                <div class="flex-ex7-item">I</div>
+                                <div class="flex-ex7-item">J</div>
+                                <div class="flex-ex7-item">K</div>
+                                <div class="flex-ex7-item">L</div>
+                            </div>
+                            <div class="code-examples">
+                                <h3>Example code</h3>
+                                <p>The space-between value displays the flex lines with equal space between them.</p>
+                                <code class="code">
+                                    .flex-container {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;display: flex;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;height: 210px;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;flex-wrap: wrap;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;align-content: space-between;<br>
+                                    }
+                                </code>
+                            </div>
+                            <div class="code-examples">
+                                <h3>Example code</h3>
+                                <p>The space-around value displays the flex lines with space before, between, and after them.</p>
+                                <code class="code">
+                                    .flex-container {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;display: flex;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;height: 210px;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;flex-wrap: wrap;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;align-content: space-around;<br>
+                                    }
+                                </code>
+                            </div>
+                            <div class="code-examples">
+                                <h3>Example code</h3>
+                                <p>The stretch value stretches the flex lines to take up the remaining space (this is default).</p>
+                                <code class="code">
+                                    .flex-container {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;display: flex;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;height: 210px;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;flex-wrap: wrap;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;align-content: stretch;<br>
+                                    }
+                                </code>
+                            </div>
+                            <div class="code-examples">
+                                <h3>Example code</h3>
+                                <p>The center value displays display the flex lines in the middle of the container.</p>
+                                <code class="code">
+                                    .flex-container {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;display: flex;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;height: 210px;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;flex-wrap: wrap;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;align-content: center;<br>
+                                    }
+                                </code>
+                            </div>
+                            <div class="code-examples">
+                                <h3>Example code</h3>
+                                <p>The flex-start value displays the flex lines at the start of the container.</p>
+                                <code class="code">
+                                    .flex-container {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;display: flex;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;height: 210px;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;flex-wrap: wrap;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;align-content: flex-start;<br>
+                                    }
+                                </code>
+                            </div>
+                            <div class="code-examples">
+                                <h3>Example code</h3>
+                                <p>The flex-end value displays the flex lines at the end of the container.</p>
+                                <code class="code">
+                                    .flex-container {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;display: flex;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;height: 210px;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;flex-wrap: wrap;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;align-content: flex-end;<br>
+                                    }
+                                </code>
+                            </div>
+                        </article>
+                </section>
                 
             </main> 
         </body>
