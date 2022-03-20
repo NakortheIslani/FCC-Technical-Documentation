@@ -120,9 +120,15 @@ h3 {
     margin: 10px 10px;
 }
 
-code {
-    background-color: #eee;
+.code {
+    background-color: white;
     border: 1px solid #999;
     display: block;
     padding: 20px;
-  }
+}
+
+.code-examples {
+    background-color: #eee;
+    display: block;
+    padding: 10px;
+} 
