@@ -17,12 +17,12 @@
                     <li><a class="nav-link" href="#flexbox_elements">Flexbox elements</a></li>
                         <li><a class="nav-link" href="#flex_container_(parent)_properties">Flex container (parent) properties</a>
                             <ul>
-                                <li><a class="sub-link" href="#">flex-direction</a></li>
-                                <li><a class="sub-link" href="#">flex-wrap</a></li>
-                                <li><a class="sub-link" href="#">flex-flow</a></li>
-                                <li><a class="sub-link" href="#">justify-content</a></li>
-                                <li><a class="sub-link" href="#">align-items</a></li>
-                                <li><a class="sub-link" href="#">align-content</a></li>
+                                <li><a class="sub-link" href="#flex_direction">flex-direction</a></li>
+                                <li><a class="sub-link" href="#flex_wrap">flex-wrap</a></li>
+                                <li><a class="sub-link" href="#flex_flow">flex-flow</a></li>
+                                <li><a class="sub-link" href="#justify_content">justify-content</a></li>
+                                <li><a class="sub-link" href="#align_items">align-items</a></li>
+                                <li><a class="sub-link" href="#align_content">align-content</a></li>
                             </ul>
                         </li>
                         <li><a class="nav-link" href="#">Flex item (child) properties</a>
@@ -115,14 +115,14 @@
                                 <h3>Example code</h3>
                                 <p>The container becomes flexible when you set the display property to flex.</p>
                                 <code class="code">
-                                    .flex-container {
-                                        display: flex;
+                                    .flex-container {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;display: flex;<br>
                                     }
                                 </code>
                             </div>
                         </article>
                         <article>
-                            <p>Here a chart listing all the Flexbox properties with breif descriptions.</p>
+                            <h4>Here is a chart listing all the Flexbox properties with breif descriptions.</h4>
                             <table>
                                 <th>Property</th><th>Description</th>
                                 <tr>
@@ -160,7 +160,194 @@
                                     </td>
                                 </tr>
                             </table>
+                            <h4>Below, we are going to take a look at these properties and thier values.</h4>
                         </article>
                 </section>
+                <section class="main-section" id="flex_direction">
+                    <header><h2>The flex-direction property</h2></header>
+                        <article>
+                            <p>The flex-direction property defines in which direction the container wants to stack
+                                the flex items.
+                            </p>
+                            <div class="flexbox-example3">
+                                <div class="flex-ex3-item">A</div>
+                                <div class="flex-ex3-item">B</div>
+                                <div class="flex-ex3-item">C</div>
+                            </div>
+                            <div class="code-examples">
+                                <h3>Example code</h3>
+                                <p>The column value stacks the flex items vertically (from top to bottom).</p>
+                                <code class="code">
+                                    .flex-container {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;display: flex;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;flex-direction: column;<br>
+                                    }
+                                </code>
+                            </div>
+                            <div class="code-examples">
+                                <h3>Example code</h3>
+                                <p>The column-reverse value stacks the flex items vertically (but from bottom to top).</p>
+                                <code class="code">
+                                    .flex-container {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;display: flex;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;flex-direction: column-reverse;<br>
+                                    }
+                                </code>
+                            </div>
+                            <div class="code-examples">
+                                <h3>Example code</h3>
+                                <p>The row value stacks the flex items horizontally (from left to right).</p>
+                                <code class="code">
+                                    .flex-container {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;display: flex;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;flex-direction: row;<br>
+                                    }
+                                </code>
+                            </div>
+                            <div class="code-examples">
+                                <h3>Example code</h3>
+                                <p>The row-reverse value stacks the flex items horizontally (but from right to left).</p>
+                                <code class="code">
+                                    .flex-container {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;display: flex;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;flex-direction: row-reverse;<br>
+                                    }
+                                </code>
+                            </div>
+                        </article>
+                </section>
+                <section class="main-section" id="flex_wrap">
+                    <header><h2>The flex-wrap property</h2></header>
+                        <article>
+                            <p>The flex-wrap property specifies whether the flex items should wrap or not.
+                                The examples below have 12 flex items, to better demonstrate the flex-wrap property.
+                                Try resizing the window to see flex-wrap in action. When the flex container can't hold
+                                it's contents anymore, it wraps the content on to a new row.
+                            </p>
+                            <div class="flexbox-example4">
+                                <div class="flex-ex4-item">A</div>
+                                <div class="flex-ex4-item">B</div>
+                                <div class="flex-ex4-item">C</div>
+                                <div class="flex-ex4-item">D</div>
+                                <div class="flex-ex4-item">E</div>
+                                <div class="flex-ex4-item">F</div>
+                                <div class="flex-ex4-item">G</div>
+                                <div class="flex-ex4-item">H</div>
+                                <div class="flex-ex4-item">I</div>
+                                <div class="flex-ex4-item">J</div>
+                                <div class="flex-ex4-item">K</div>
+                                <div class="flex-ex4-item">L</div>
+                            </div>
+                            <div class="code-examples">
+                                <h3>Example code</h3>
+                                <p>The wrap value specifies that the flex items will wrap if necessary.</p>
+                                <code class="code">
+                                    .flex-container {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;display: flex;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;flex-wrap: wrap;<br>
+                                    }
+                                </code>
+                            </div>
+                            <div class="code-examples">
+                                <h3>Example code</h3>
+                                <p>The nowrap value specifies that the flex items will not wrap (this is default).</p>
+                                <code class="code">
+                                    .flex-container {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;display: flex;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;flex-wrap: nowrap;<br>
+                                    }
+                                </code>
+                            </div>
+                            <div class="code-examples">
+                                <h3>Example code</h3>
+                                <p>The wrap-reverse value specifies that the flexible items will wrap if necessary, in reverse order.</p>
+                                <code class="code">
+                                    .flex-container {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;display: flex;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;flex-wrap: wrap-reverse;<br>
+                                    }
+                                </code>
+                            </div>
+                        </article>
+                </section>
+                <section class="main-section" id="flex_flow">
+                    <header><h2>The flex-flow property</h2></header>
+                        <article>
+                            <p>The flex-flow property is a shorthand property for setting both the flex-direction and flex-wrap properties.
+                                The direction value is entered first then the wrap value is set.
+                            </p>
+                            <div class="code-examples">
+                                <h3>Example code</h3>
+                                <code class="code">
+                                    .flex-container {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;display: flex;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;flex-flow: row wrap;<br>
+                                    }
+                                </code>
+                            </div>
+                        </article>
+                </section>
+                <section class="main-section" id="justify_content">
+                    <header><h2>The justify-content property</h2></header>
+                        <article>
+                            <p>The justify-content property is used to align the flex items.</p>
+                            <div class="flexbox-example5">
+                                <div class="flex-ex5-item">A</div>
+                                <div class="flex-ex5-item">B</div>
+                                <div class="flex-ex5-item">C</div>
+                            </div>
+                            <div class="code-examples">
+                                <h3>Example code</h3>
+                                <p>The center value aligns the flex items at the center of the container.</p>
+                                <code class="code">
+                                    .flex-container {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;display: flex;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;justify-content: center;<br>
+                                    }
+                                </code>
+                            </div>
+                            <div class="code-examples">
+                                <h3>Example code</h3>
+                                <p>The flex-start value aligns the flex items at the beginning of the container (this is default).</p>
+                                <code class="code">
+                                    .flex-container {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;display: flex;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;justify-content: flex-start;<br>
+                                    }
+                                </code>
+                            </div>
+                            <div class="code-examples">
+                                <h3>Example code</h3>
+                                <p>The flex-end value aligns the flex items at the end of the container.</p>
+                                <code class="code">
+                                    .flex-container {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;display: flex;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;justify-content: flex-end;<br>
+                                    }
+                                </code>
+                            </div>
+                            <div class="code-examples">
+                                <h3>Example code</h3>
+                                <p>The space-around value displays the flex items with space before, between, and after the lines.</p>
+                                <code class="code">
+                                    .flex-container {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;display: flex;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;justify-content: space-around;<br>
+                                    }
+                                </code>
+                            </div>
+                            <div class="code-examples">
+                                <h3>Example code</h3>
+                                <p>The space-between value displays the flex items with space between the lines.</p>
+                                <code class="code">
+                                    .flex-container {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;display: flex;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;justify-content: space-between;<br>
+                                    }
+                                </code>
+                            </div>
+                        </article>
+                </section>
+                
             </main> 
         </body>
