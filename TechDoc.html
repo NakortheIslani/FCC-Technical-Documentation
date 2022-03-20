@@ -12,10 +12,10 @@
            <nav id="navbar">
                 <header><h1 class="navheader">Flexbox Topics</h1></header>
                 <ul>
-                    <li><a class="nav-link" href="#what_is_Flexbox?">What is Flexbox?</a></li>
+                    <li><a class="nav-link" href="#what_is_flexbox?">What is Flexbox?</a></li>
                     <li><a class="nav-link" href="#assumed_knowledge">Assumed knowledge</a></li>
                     <li><a class="nav-link" href="#flexbox_elements">Flexbox elements</a></li>
-                        <li><a class="nav-link" href="#">Flex container (parent) properties</a>
+                        <li><a class="nav-link" href="#flex_container_(parent)_preperties">Flex container (parent) properties</a>
                             <ul>
                                 <li><a class="sub-link" href="#">flex-direction</a></li>
                                 <li><a class="sub-link" href="#">flex-wrap</a></li>
@@ -39,7 +39,7 @@
                 </ul>
             </nav>
             <main id="main-doc">
-                <section class="main-section" id="what_is_Flexbox?">
+                <section class="main-section" id="what_is_flexbox?">
                     <header><h2>What is Flexbox?</h2></header>
                     <article>
                         <section>
@@ -70,7 +70,8 @@
                     <header><h2>Assumed knowledge</h2></header>
                     <article>
                         <p>Before you go on to learn about Flexbox and its elements and properties, let's do a breif skills check.
-                            To understand Flexbox more easily, its recommended that you have at least a basic understanding of the following:</p>
+                            To understand Flexbox more easily, its recommended that you have at least a basic understanding of the following:
+                        </p>
                         <ul>
                             <li>HTML structure and syntax</li>
                             <li>CSS structure and syntax</li>
@@ -81,8 +82,8 @@
                     </article>
                 </section>
                 <section class="main-section" id="flexbox_elements">
+                    <header><h2>Flexbox elements</h2></header>
                     <article>
-                        <header><h2>Flexbox elements</h2></header>
                         <p>To start using the Flexbox model, you have to define a flex container.</p>
                         <div class="flexbox-example2">
                             <div class="flex-ex2-item">A</div>
@@ -92,8 +93,8 @@
                         <p>The element above represents a flex container (the colored area) with three flex items inside of it.</p>
                         <div class="code-examples">
                             <h3>Example Code</h3>
-                            <p>A flex container in html with three flex items.</p>
-                            <code>
+                            <p>A flex container in HTML with three flex items.</p>
+                            <code class="code">
                                 &lt;div class="flex-container"&gt;<br> 
                                 &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;1&lt;/div&gt;<br>
                                 &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;2&lt;/div&gt;<br>
@@ -102,6 +103,27 @@
                             </code><br>
                         </div>
                     </article>
+                </section>
+                <section class="main-section" id="flex_container_(parent)_properties">
+                    <header><h2>Flex container (parent) properties</h2></header>
+                        <article>
+                            <p>The flex container in the previous section showed an example of Flexbox.
+                                Now that we understand how to make all the HTML elements we need for a flex box,
+                                let's take a look at the CSS.
+                            </p>
+                            <div class="code-examples">
+                                <h3>Example code</h3>
+                                <p>The container becomes flexible when you set the display property to flex.</p>
+                                <code class="code">
+                                    .flex-container {
+                                        display: flex;
+                                    }
+                                </code>
+                            </div>
+                        </article>
+                        <article>
+                            This is a chart listing all the Flexbox properties.
+                        </article>
                 </section>
             </main> 
         </body>
