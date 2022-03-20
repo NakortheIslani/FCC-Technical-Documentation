@@ -217,3 +217,43 @@ tr:nth-child(even) {
     background-color: gray;
     margin: 10px 10px;
 }
+
+.flexbox-example6 {
+    display: flex;
+    width: 50%;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+    background: purple;
+    flex-wrap: wrap;
+}
+
+.flex-ex6-item {
+    display: inherit;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    margin: 10px 10px;
+}
+
+.flexbox-example7 {
+    display: flex;
+    width: 30%;
+    height: 210px;
+    align-items: center;
+    background: purple;
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+
+.flex-ex7-item {
+    display: inherit;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    margin: 10px 10px;
+}
