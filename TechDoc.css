@@ -13,12 +13,13 @@ h1 {
 
 h2 {
     font-size: 26px;
-    margin: 0 0;
+    margin: 0 0 20px 0;
     text-decoration: underline;
 }
 
 h3 {
     font-size: 20px;
+    margin: 0 0;
 }
 
 article {
@@ -38,6 +39,10 @@ th {
     border-bottom: 1px solid black;
 }
 
+div {
+    margin-bottom: 40px;
+}
+
 tr:nth-child(even) {
     background-color: #eee;
 }
@@ -55,6 +60,19 @@ tr:nth-child(even) {
     margin-left: 250px;
     padding: 10px 15px 0 20px;
 }
+
+.code {
+    background-color: white;
+    border: 1px solid #999;
+    display: block;
+    padding: 20px;
+}
+
+.code-examples {
+    background-color: #eee;
+    display: block;
+    padding: 10px;
+} 
 
 .nav-link {
     font-size: 18px;
@@ -141,15 +159,61 @@ tr:nth-child(even) {
     margin: 10px 10px;
 }
 
-.code {
-    background-color: white;
-    border: 1px solid #999;
-    display: block;
-    padding: 20px;
+.flexbox-example3 {
+    display: flex;
+    width: 40%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background: purple;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
-.code-examples {
-    background-color: #eee;
-    display: block;
-    padding: 10px;
-} 
+.flex-ex3-item {
+    display: inherit;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    margin: 10px 10px;
+}
+
+.flexbox-example4 {
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    background: purple;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.flex-ex4-item {
+    display: inherit;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    margin: 10px 10px;
+}
+
+.flexbox-example5 {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    background: purple;
+    flex-wrap: wrap;
+}
+
+.flex-ex5-item {
+    display: inherit;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    margin: 10px 10px;
+}
