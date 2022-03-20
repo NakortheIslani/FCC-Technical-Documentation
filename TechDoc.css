@@ -21,6 +21,27 @@ h3 {
     font-size: 20px;
 }
 
+article {
+    margin-bottom: 80px;
+}
+
+table {
+    border: 1px solid black;
+    border-spacing: 0px 0px;
+}
+
+td {
+    padding: 10px;
+}
+
+th {
+    border-bottom: 1px solid black;
+}
+
+tr:nth-child(even) {
+    background-color: #eee;
+}
+
 #navbar {
     position: fixed;
     width: 250px;
