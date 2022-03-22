@@ -25,17 +25,16 @@
                                 <li><a class="sub-link" href="#align_content">align-content</a></li>
                             </ul>
                         </li>
-                        <li><a class="nav-link" href="#">Flex item (child) properties</a>
+                        <li><a class="nav-link" href="#flex_item_(child)_properties">Flex item (child) properties</a>
                             <ul>
-                                <li><a class="sub-link" href="#">order</a></li>
-                                <li><a class="sub-link" href="#">flex-grow</a></li>
-                                <li><a class="sub-link" href="#">flex-shrink</a></li>
-                                <li><a class="sub-link" href="#">flex-basis</a></li>
-                                <li><a class="sub-link" href="#">flex</a></li>
-                                <li><a class="sub-link" href="#">align-self</a></li>
+                                <li><a class="sub-link" href="#order">order</a></li>
+                                <li><a class="sub-link" href="#flex_grow">flex-grow</a></li>
+                                <li><a class="sub-link" href="#flex_shrink">flex-shrink</a></li>
+                                <li><a class="sub-link" href="#flex_basis">flex-basis</a></li>
+                                <li><a class="sub-link" href="#flex">flex</a></li>
+                                <li><a class="sub-link" href="#align_self">align-self</a></li>
                             </ul>
                         </li>
-                    <li><a class="nav-link" href="#">Responsive Flexbox</a></li>
                 </ul>
             </nav>
             <main id="main-doc">
@@ -84,23 +83,25 @@
                 <section class="main-section" id="flexbox_elements">
                     <header><h2>Flexbox elements</h2></header>
                     <article>
-                        <p>To start using the Flexbox model, you have to define a flex container.</p>
+                        <p>To start using the Flexbox model, you have to define a flex container.
+                            The element below represents a flex container (the colored area) with 
+                            three flex items inside of it.
+                        </p>
                         <div class="flexbox-example2">
                             <div class="flex-ex2-item">A</div>
                             <div class="flex-ex2-item">B</div>
                             <div class="flex-ex2-item">C</div>
                         </div>
-                        <p>The element above represents a flex container (the colored area) with three flex items inside of it.</p>
                         <div class="code-examples">
                             <h3>Example Code</h3>
                             <p>A flex container in HTML with three flex items.</p>
                             <code class="code">
                                 &lt;div class="flex-container"&gt;<br> 
-                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;1&lt;/div&gt;<br>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;2&lt;/div&gt;<br>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;3&lt;/div&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;A&lt;/div&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;B&lt;/div&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;C&lt;/div&gt;<br>
                                 &lt;/div&gt;
-                            </code><br>
+                            </code>
                         </div>
                     </article>
                 </section>
@@ -122,7 +123,7 @@
                             </div>
                         </article>
                         <article>
-                            <h4>Here is a chart listing all the Flexbox properties with breif descriptions.</h4>
+                            <h4>Here is a chart listing all the Flexbox container (parent) properties with breif descriptions.</h4>
                             <table>
                                 <th>Property</th><th>Description</th>
                                 <tr>
@@ -512,6 +513,182 @@
                             </div>
                         </article>
                 </section>
-                
+                <section class="main-section" id="flex_item_(child)_properties">
+                    <header><h2>Flex item (child) properties</h2></header>
+                        <article>
+                            <p>The direct child elements of a flex container automatically becomes flexible (flex) items.
+                                The box below shows a flex container with three flex items in it.
+                            </p>
+                            <div class="flexbox-example2">
+                                <div class="flex-ex2-item">A</div>
+                                <div class="flex-ex2-item">B</div>
+                                <div class="flex-ex2-item">C</div>
+                            </div>
+                            <div class="code-examples">
+                                <h3>Example Code</h3>
+                                <p>A flex container in HTML with three flex items.</p>
+                                <code class="code">
+                                    &lt;div class="flex-container"&gt;<br> 
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;A&lt;/div&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;B&lt;/div&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;C&lt;/div&gt;<br>
+                                    &lt;/div&gt;
+                                </code>
+                            </div>
+                        </article>
+                        <article>
+                            <h4>Here is a chart listing all the Flexbox item (child) properties with breif descriptions.</h4>
+                            <table>
+                                <th>Property</th><th>Description</th>
+                                <tr>
+                                    <td>order</td>
+                                    <td>Specifies the order of the flex items inside the same container.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>flex-grow</td>
+                                    <td>Specifies how much a flex item will grow relative to the rest of the flex items inside the same container.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>flex-shrink</td>
+                                    <td>Specifies how much a flex item will shrink relative to the rest of the flex items inside the same container.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>flex-basis</td>
+                                    <td>Specifies the initial length of a flex item.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>flex</td>
+                                    <td>A shorthand property for the flex-grow, flex-shrink, and the flex-basis properties.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>align-self</td>
+                                    <td>Specifies the alignment for a flex item (overrides the flex container's align-items property).
+                                    </td>
+                                </tr>
+                            </table>
+                            <h4>Below, we are going to take a look at these properties and thier values.</h4>
+                        </article>
+                </section>
+                <section class="main-section" id="order">
+                    <header><h2>The order property</h2></header>
+                        <article>
+                            <p>The order property specifies the order of the flex items. 
+                                The first flex item in the code does not have to appear as the first item in the layout.
+                                The order value must be a number, default value is 0.
+                            </p>
+                            <div class="flexbox-example2">
+                                <div class="flex-ex2-item">C</div>
+                                <div class="flex-ex2-item">A</div>
+                                <div class="flex-ex2-item">B</div>
+                            </div>
+                            <div class="code-examples">
+                                <h3>Example Code</h3>
+                                <p>The order property can change the order of the flex items.</p>
+                                <code class="code">
+                                    &lt;div class="flex-container"&gt;<br> 
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div style="order: C"&gt;A&lt;/div&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div style="order: A"&gt;B&lt;/div&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div style="order: B"&gt;C&lt;/div&gt;<br>
+                                    &lt;/div&gt;
+                                </code>
+                            </div>
+                        </article>
+                </section>
+                <section class="main-section" id="flex_grow">
+                    <header><h2>The flex-grow property</h2></header>
+                        <article>
+                            <p>The flex-grow property specifies how much a flex item will grow relative to the rest of the flex items.
+                                The value must be a number, default value is 0.
+                            </p>
+                            <div class="code-examples">
+                                <h3>Example Code</h3>
+                                <p>Make the third flex item grow eight times faster than the other flex items.</p>
+                                <code class="code">
+                                    &lt;div class="flex-container"&gt;<br> 
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div style="flex-grow: 1"&gt;A&lt;/div&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div style="flex-grow: 1"&gt;B&lt;/div&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div style="flex-grow: 8"&gt;C&lt;/div&gt;<br>
+                                    &lt;/div&gt;
+                                </code>
+                            </div>
+                        </article>
+                </section>
+                <section class="main-section" id="flex_shrink">
+                    <header><h2>The flex-shrink property</h2></header>
+                        <article>
+                            <p>The flex-shrink property specifies how much a flex item will shrink relative to the rest of the flex items.
+                                The value must be a number, default value is 1.
+                            </p>
+                            <div class="code-examples">
+                                <h3>Example Code</h3>
+                                <p>Do not let the third flex item shrink as much as the other flex items.</p>
+                                <code class="code">
+                                    &lt;div class="flex-container"&gt;<br> 
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;A&lt;/div&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;B&lt;/div&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div style="flex-shrink: 0"&gt;C&lt;/div&gt;<br>
+                                    &lt;/div&gt;
+                                </code>
+                            </div>
+                        </article>
+                </section>
+                <section class="main-section" id="flex_basis">
+                    <header><h2>The flex-basis property</h2></header>
+                        <article>
+                            <p>The flex-basis property specifies the initial length of a flex item.</p>
+                            <div class="code-examples">
+                                <h3>Example Code</h3>
+                                <p>Set the initial length of the third flex item to 200 pixels.</p>
+                                <code class="code">
+                                    &lt;div class="flex-container"&gt;<br> 
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;A&lt;/div&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;B&lt;/div&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div style="flex-basis: 200px"&gt;C&lt;/div&gt;<br>
+                                    &lt;/div&gt;
+                                </code>
+                            </div>
+                        </article>
+                </section>
+                <section class="main-section" id="flex">
+                    <header><h2>The flex property</h2></header>
+                        <article>
+                            <p>The flex property is a shorthand property for the flex-grow, flex-shrink, and flex-basis properties.</p>
+                            <div class="code-examples">
+                                <h3>Example Code</h3>
+                                <p>Make the third flex item not growable (0), not shrinkable (0), and with an initial length of 200 pixels.</p>
+                                <code class="code">
+                                    &lt;div class="flex-container"&gt;<br> 
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;A&lt;/div&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;B&lt;/div&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div style="flex: 0 0 200px"&gt;C&lt;/div&gt;<br>
+                                    &lt;/div&gt;
+                                </code>
+                            </div>
+                        </article>
+                </section>
+                <section class="main-section" id="align_self">
+                    <header><h2>The align-self property</h2></header>
+                        <article>
+                            <p>The align-self property specifies the alignment for the selected item inside the flexible container.
+                                The align-self property overrides the default alignment set by the container's align-items property.
+                            </p>
+                            <div class="code-examples">
+                                <h3>Example Code</h3>
+                                <p>Align the third flex item in the middle of the container.</p>
+                                <code class="code">
+                                    &lt;div class="flex-container"&gt;<br> 
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;A&lt;/div&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;B&lt;/div&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div style="align-self: center"&gt;C&lt;/div&gt;<br>
+                                    &lt;/div&gt;
+                                </code>
+                            </div>
+                        </article>
+                </section>
             </main> 
         </body>
